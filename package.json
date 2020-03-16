@@ -1,0 +1,24 @@
+{
+  "name": "emotions-tracker-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bright-mouse/emotions-tracker-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bright-mouse/emotions-tracker-bot/issues"
+  },
+  "homepage": "https://github.com/bright-mouse/emotions-tracker-bot#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "nedb": "^1.8.0",
+    "node-telegram-bot-api": "^0.40.0"
+  }
+}
