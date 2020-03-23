@@ -4,16 +4,15 @@ const _ = require('lodash')
 
 const Datastore = require('nedb');
 
+const clc = require('cli-color');
 const db = new Datastore({filename : 'users'});
 db.loadDatabase();
 
 const getDayStatistics = (id, daysAgo, bot) => {
   somePriviosDay = getSomePriviosDay(daysAgo);
   db.find({user: id, date: { $gt: somePriviosDay }}, function (err, docs) {
-console.log('!!!!!!!!!!!!!!')
+
       const dailyEmotions = docs.map((item) => item.emotion)
-      console.log('dailyEmotions', dailyEmotions)
-      
       const emotionCountByTypes = dailyEmotions.reduce((acc, item) => {
         if (_.has(acc, item)) {
           acc[item] += 1
