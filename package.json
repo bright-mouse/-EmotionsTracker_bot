@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/bright-mouse/emotions-tracker-bot#readme",
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "nedb": "^1.8.0",
     "node-telegram-bot-api": "^0.40.0"
   }
